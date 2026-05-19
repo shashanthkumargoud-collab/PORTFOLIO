@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- Use modern Inter font or Outfit for premium tech look -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Portfo<span class="highlight">lio.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="section hero">
+            <div class="hero-content reveal">
+                <h4>Hello, I am</h4>
+                <h1>SHASHANTH KUMAR <br><span class="highlight">GOUD</span></h1>
+                <p>I build interactive, completely responsive, and visually stunning web experiences using the latest web technologies. Let's create something extraordinary.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Abstract floating glass shapes to provide visual depth -->
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container reveal">
+                <div class="section-title">
+                    <h2>Technical <span class="highlight">Skills</span></h2>
+                    <p>The tools and technologies I use to bring ideas to life</p>
+                </div>
+                <!-- CSS Grid layout for skill cards -->
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">✨</div>
+                        <h3>Frontend</h3>
+                        <p>HTML5, CSS3, JavaScript (ES6+), React, Vue</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">📱</div>
+                        <h3>Responsive Design</h3>
+                        <p>Mobile-first layouts, Flexbox, CSS Grid</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">⚡</div>
+                        <h3>Performance</h3>
+                        <p>Optimization, SEO best practices, Lazy Loading</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🛠</div>
+                        <h3>Tools</h3>
+                        <p>Git, Webpack, Figma, VS Code</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container reveal">
+                <div class="section-title">
+                    <h2>Recent <span class="highlight">Projects</span></h2>
+                    <p>A selection of some of my most impactful works</p>
+                </div>
+                <!-- CSS Grid layout for project cards -->
+                <div class="projects-grid">
+                    <div class="project-card" data-project="pawcare">
+                        <div class="project-img" style="background-image: url('C:/Users/goudp/.gemini/antigravity/brain/fcdf7c13-81f8-4159-ae5d-148c08a79203/pawcare_app_mockup_1779158651736.png'); background-size: cover; background-position: center;"></div>
+                        <div class="project-info">
+                            <h3>PawCare</h3>
+                            <p>A digital Pet Adoption and Care Platform connecting animal shelters with loving adopters.</p>
+                            <button class="btn-link view-project">View Project &rarr;</button>
+                        </div>
+                    </div>
+                    <div class="project-card" data-project="world-explorer">
+                        <div class="project-img" style="background-image: url('C:/Users/goudp/.gemini/antigravity/brain/fcdf7c13-81f8-4159-ae5d-148c08a79203/world_explorer_thumbnail_1779159915816.png'); background-size: cover; background-position: center;"></div>
+                        <div class="project-info">
+                            <h3>World Explorer</h3>
+                            <p>An interactive platform to explore global country data using REST API integration.</p>
+                            <button class="btn-link view-project">View Project &rarr;</button>
+                        </div>
+                    </div>
+                    <div class="project-card" data-project="random-quizz">
+                        <div class="project-img" style="background-image: url('C:/Users/goudp/.gemini/antigravity/brain/fcdf7c13-81f8-4159-ae5d-148c08a79203/random_quizz_thumbnail_1779160034202.png'); background-size: cover; background-position: center;"></div>
+                        <div class="project-info">
+                            <h3>Random Quizz</h3>
+                            <p>An interactive web-based quiz platform to test knowledge with real-time score tracking.</p>
+                            <button class="btn-link view-project">View Project &rarr;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container reveal">
+                <div class="section-title">
+                    <h2>Get in <span class="highlight">Touch</span></h2>
+                    <p>Have an idea or want to work together? Drop me a message.</p>
+                </div>
+                <div class="contact-wrapper">
+                    <!-- Contact form -->
+                    <form class="contact-form" id="form">
+                        <input type="hidden" name="access_key" value="7e91e9be-7f9f-4690-ad6b-a86423733bb2">
+                        <div class="input-group">
+                            <input type="text" id="name" name="Name" placeholder="Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" name="Email" placeholder="Email" required>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" name="Message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <!-- Contact Information Details -->
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <h4>Email</h4>
+                            <p>shashanthkumargoud@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Location</h4>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Creative Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body">
+                <!-- Data will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
